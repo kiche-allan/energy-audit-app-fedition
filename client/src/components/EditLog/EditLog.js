@@ -35,8 +35,8 @@ export const EditLog = () => {
             <form id="edit" method="POST" onSubmit={onSubmit}>
                 <div className="container">
 
-                    <h1>Edit Log</h1>
-                    <label htmlFor="log-title">Log title:</label>
+                    <h1>Edit Data Entry</h1>
+                    <label htmlFor="log-title">Data Entry title:</label>
                     <input
                         type="text"
                         id="title"
@@ -54,7 +54,7 @@ export const EditLog = () => {
                         onChange={changeHandler}
                     />
 
-                    <label htmlFor="emissions">Emissions:</label>
+                    <label htmlFor="emissions">Total Energy Used:</label>
                     <input
                         type="number"
                         id="emissions"
