@@ -17,6 +17,10 @@ import { RouteGuard } from './components/Guards/RouteGuard';
 import { Diary } from './components/Diary';
 import { Dashboard } from './components/Dashboard';
 
+import Recommendations from './components/Recommend/Recommend';
+import Report from './components/Reports/report';
+
+
 
 function App() {
     return (
@@ -34,6 +38,7 @@ function App() {
                             <Route path='/register' element={<Register />} />
                             <Route path='/catalog/:logId' element={<LogDetails />} />
                             <Route path='/catalog' element={<Catalog />} />
+                            
 
                             <Route element={<RouteGuard />}>
                                 <Route path='/diary' element={<Diary />} />
@@ -41,6 +46,8 @@ function App() {
                                 <Route path='/create-log' element={<CreateLog />} />
                                 <Route path='/logout' element={<Logout />} />
                                 <Route path='/dashboard' element={<Dashboard />} />
+                                <Route path='/recommend' element={<Recommendations />} />
+                                <Route path='/reports' element={<Report />} />
 
                             </Route>
                         </Routes>

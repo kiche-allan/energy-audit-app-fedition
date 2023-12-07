@@ -1,0 +1,21 @@
+/* styles/recommendations.css */
+.recommendations-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34d399;
+  }
+  
+  .recommendations-box {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    width: 600px;
+  }
+  
+  .item-box {
+    margin: 0.5rem; /* Adjust margin as needed */
+    flex: 1 0 calc(33.33% - 1rem); /* Adjust width and margin based on your layout preference */
+  }

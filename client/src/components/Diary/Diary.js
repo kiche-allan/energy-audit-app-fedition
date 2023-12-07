@@ -15,7 +15,7 @@ export const Diary = () => {
 
     return (
         <section id="diary-page">
-            <h1>Your total emissions: {totalEmissions}</h1>
+            <h1>Your total energy Load: {totalEmissions}</h1>
 
             {personalLogs.map(x => <CatalogItem key={x._id} {...x} />)}
 

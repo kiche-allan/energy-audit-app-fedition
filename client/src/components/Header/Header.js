@@ -16,9 +16,10 @@ const {isAuthenticated} = useContext(AuthContext);
                 {/* Logged users */}
                 {isAuthenticated && (
                     <div id="user">
-                    <Link to="/diary">Diary</Link>
+                    <Link to="/diary">Loads</Link>
                     <Link to="/create-log">Data Entry</Link>
                     <Link to="/recommend">Recommendations</Link>
+                    
                     <Link to="/logout">Logout</Link>
                 </div>
                 )}
@@ -32,6 +33,8 @@ const {isAuthenticated} = useContext(AuthContext);
                 </div>
                 )}
                 <Link to="/about">About</Link>
+                <Link to="/reports">Reports</Link>
+
             </nav>
         </header>
     );

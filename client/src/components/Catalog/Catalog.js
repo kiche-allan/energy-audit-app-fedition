@@ -10,12 +10,12 @@ export const Catalog = () => {
 
   return (
     <section id="catalog-page">
-      <h1>All Logs</h1>
+      <h1>Energy Total Usage</h1>
 
       {logs.map(x => <CatalogItem key={x._id} {...x} />)}
 
       {logs.length === 0 && (
-        <h3 className="no-articles">No logs yet</h3>
+        <h3 className="no-articles">No energy readings  yet</h3>
       )}
     </section>
 
